@@ -1,0 +1,60 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="420" Width="320">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF3D3D3D" Offset="0.28"/>
+            <GradientStop Color="#FF4732B1" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="0,0,0,0">
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0" MappingMode="RelativeToBoundingBox">
+                <GradientStop Color="#FF13C8CC" Offset="0.933"/>
+                <GradientStop Color="#FFB019EC" Offset="0.26"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label  HorizontalAlignment="Center" VerticalAlignment="Center" Height="366" Width="281" BorderThickness="0" BorderBrush="#FF0205D4" Background="#FF0004FF" Margin="1,1,0,0" Opacity="0.1"/>
+        <Label  HorizontalAlignment="Center" VerticalAlignment="Center" Height="360" Width="274" BorderThickness="0" BorderBrush="#FF0205D4">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0" MappingMode="RelativeToBoundingBox">
+                    <GradientStop Color="#FF13C8CC" Offset="0.933"/>
+                    <GradientStop Color="#FFB019EC" Offset="0.253"/>
+                </LinearGradientBrush>
+            </Label.Background>
+
+        </Label>
+        <StackPanel Width="320" Height="400">
+            <Label Content="Sign up" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontFamily="Bahnschrift"/>
+
+            <TextBox x:Name="TextBox1" TextWrapping="Wrap" Text="First name" Width="225" Height="22" Margin="0,20,0,285" HorizontalAlignment="Center" Background="Transparent" TextAlignment="Left" FontSize="15" BorderBrush="Transparent" Foreground="White"  SelectionTextBrush="Transparent" SelectionBrush="Transparent" PreviewMouseLeftButtonDown="TextBox1_PreviewMouseLeftButtonDown" TextChanged="TextBox1_TextChanged" VerticalAlignment="Top"  />
+            <Button Width="200" Height="1" Background="White" Margin="-20,-280,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" BorderBrush="White" Foreground="White"/>
+            <TextBox x:Name="TextBox1_Copy" TextWrapping="Wrap" Text="E-mail address" Width="225" Height="22" Margin="0,-260,0,0" HorizontalAlignment="Center" Background="Transparent" TextAlignment="Left" FontSize="15" BorderBrush="Transparent" Foreground="White" SelectionTextBrush="Transparent" SelectionBrush="Transparent" VerticalAlignment="Top" PreviewMouseLeftButtonDown="TextBox1_Copy_PreviewMouseLeftButtonDown"  />
+            <Button Width="200" Height="1" Background="White" Margin="-20,-230,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" BorderBrush="White" Foreground="White"/>
+            <TextBox x:Name="TextBox1_Copy1" TextWrapping="Wrap" Text="Username" Width="225" Height="22" Margin="0,-215,0,0" HorizontalAlignment="Center" Background="Transparent" TextAlignment="Left" FontSize="15" BorderBrush="Transparent" Foreground="White"  SelectionTextBrush="Transparent" SelectionBrush="Transparent" VerticalAlignment="Top" PreviewMouseLeftButtonDown="TextBox1_Copy1_PreviewMouseLeftButtonDown"  />
+            <Button Width="200" Height="1" Background="White" Margin="-20,-185,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" BorderBrush="White" Foreground="White"/>
+            <TextBox x:Name="TextBox1_Copy2" TextWrapping="Wrap" Text="Password" Width="225" Height="22" Margin="0,-170,0,0" HorizontalAlignment="Center" Background="Transparent" TextAlignment="Left" FontSize="15" BorderBrush="Transparent" Foreground="White"  SelectionTextBrush="Transparent" SelectionBrush="Transparent" VerticalAlignment="Top" PreviewMouseLeftButtonDown="TextBox1_Copy2_PreviewMouseLeftButtonDown"  />
+            <Button Width="200" Height="1" Background="White" Margin="-20,-135,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" BorderBrush="White" Foreground="White" Cursor=""/>
+            <Button x:Name="Button1" Content="Sign up"  Width="100" Height="30" Margin="0,-110,0,0" BorderBrush="Transparent" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" PreviewMouseLeftButtonDown="Button1_PreviewMouseLeftButtonDown">
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF00D5FF" Offset="1"/>
+                        <GradientStop Color="#FF00BAD2" Offset="0"/>
+                        <GradientStop Color="#FE1E70BB" Offset="0"/>
+                        <GradientStop Color="#FE1CBBFF" Offset="0.55"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+            </Button>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>
